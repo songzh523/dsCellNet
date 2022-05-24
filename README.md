@@ -5,7 +5,7 @@ It identifies interactions according to protein localizations and reinforces the
 # How to use tsCellNet?
 ## Step1:Installing tsCellNet
 *R (R>=4.0.3)*
-igraph(>=1.2.6); homologene(>=1.4.68); Hmisc(>=4.5.0); ggpubr(>=1.2.6); pheatmap(>=1.2.6); reshape2(>=1.2.6); ggalluvial(>=1.2.6); tseries(>=1.2.6); magrittr(>=1.2.6);
+igraph(>=1.2.6); homologene(>=1.4.68); Hmisc(>=4.5.0); ggpubr(>=0.4.0); pheatmap(>=1.0.12); reshape2(>=1.4.4); ggalluvial(>=0.12.3); tseries(>=0.10.48); magrittr(>=2.0.1);
 
 ## Step2:Running tsCellNet
 
