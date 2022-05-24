@@ -9,5 +9,7 @@ It identifies interactions according to protein localizations and reinforces the
 * igraph(>=1.2.6); homologene(>=1.4.68); Hmisc(>=4.5.0); ggpubr(>=0.4.0); pheatmap(>=1.0.12); reshape2(>=1.4.4); ggalluvial(>=0.12.3); tseries(>=0.10.48); magrittr(>=2.0.1);
 
 ## Step2:Running tsCellNet
+### Parameters:
+** datloc: path of the three/two input files \[expression file(mandatory) ; cell-type file(mandatory); time-point file(optional)\]
 
 
