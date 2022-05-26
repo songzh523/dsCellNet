@@ -10,6 +10,16 @@ It identifies interactions according to protein localizations and reinforces the
 
 ## Step2:Running tsCellNet
 ### Parameters:
-** datloc: path of the three/two input files \[expression file(mandatory) ; cell-type file(mandatory); time-point file(optional)\]
+** datloc: path of the three/two input files;
+** expnam: filenames of expression file(mandatory); 
+** typnam: filenames of cell-type file(mandatory); 
+** timnam: filenames of time-point file(optional);
+** resloc: path of result files; 
+** mainlab: prefix name of the result files;
+** species: species name;
+** controltime: the starting time-point name;
+** treattime: if or not need to compare cell-cell interactions with starting time-point, if not set the values as "total"
+### Example:
+
 
 
