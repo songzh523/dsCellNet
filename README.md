@@ -20,23 +20,23 @@ It identifies interactions according to protein localizations and reinforces the
 * controltime: the starting time-point name;
 * treattime: if or not need to compare cell-cell interactions with starting time-point, if not set the values as "total"
 ### Example:
-* load three input files\[expression,cell-type,time-point\]
+* load three input files\[expression,cell-type,time-point\]  
 out<-datainput(datloc,expnam,typnam,timnam,"FALSE",resloc)
 inpexp<-as.data.frame(out$exp) 
 inptyp<-as.data.frame(out$typ)
 colnames(inptyp)<-colnames(out$typ)
 rownames(inptyp)<-rownames(out$typ) 
 inptim<-as.data.frame(out$tim) 
-* statistic the proportion of each cell-type in each time-point
+* statistic the proportion of each cell-type in each time-point  
 usedcolo<-definecolo(tsccnetcol,inptyp$Type,resloc,mainlab)
 sankey(inptim$Time,inptyp$Type,usedcolo,mainlab,resloc)
-* infer cell-cell interactions in each time-point
+* infer cell-cell interactions in each time-point  
 memsercpros<-preparepairs(inpexp,species,dbloc,mainlab)
 singlenet(inpexp,inptyp,"Type",inptim,"Time",memsercpros,usedcolo,"FALSE",dbloc,mainlab) 
-* infer time-series cell-cell interactions
+* infer time-series cell-cell interactions  
 developcorrelation(inptim,usedcolo,resloc)
 comparednet(controltime,treattime,usedcolo,resloc)
-* statistic the incoming/outgoing/total score of each cell-type in each time-point
+* statistic the incoming/outgoing/total score of each cell-type in each time-point  
 importance_plot(resloc,"row","incoming","None")
 importance_plot(resloc,"row","outgoing","None")
 importance_plot(resloc,"row","total","None")
