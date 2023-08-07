@@ -8,6 +8,14 @@ It identifies interactions according to protein localizations and reinforces the
 * R (R>=4.0.3)
 * igraph(>=1.2.6); homologene(>=1.4.68); Hmisc(>=4.5.0); ggpubr(>=0.4.0); pheatmap(>=1.0.12); reshape2(>=1.4.4); ggalluvial(>=0.12.3); tseries(>=0.10.48); magrittr(>=2.0.1);
 
+* download dsCellNetv1_1.0.tar.gz
+* tar -xvf dsCellNetv1_1.0.tar.gz
+* yourpath="~/scr/tsCCNet/WK/" #location put dsCellNetv1_1.0.tar.gz
+* install.packages(paste(yourpath,"dsCellNetv1_1.0.tar.gz",sep=""), type = "source", repos = NULL)
+* library('devtools')
+* load_all()
+* library(dsCellNetv1)
+
 ## Step2:Running dsCellNet
 ### Parameters:
 * datloc: path of the three/two input files;
